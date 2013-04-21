@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"github.com/go-gl/gl"
 	"image"
+	"image/color"
 )
 
 // A Font allows rendering of text to an OpenGL context.
