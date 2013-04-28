@@ -160,7 +160,7 @@ func loadFont(img *image.RGBA, config *FontConfig) (f *Font, err error) {
 
 		// Texture coordinate offsets.
 		tx1 := float32(glyph.X) / texWidth
-		ty1 := float32(glyph.Y) / texHeight
+		ty1 := (float32(glyph.Y) + float32(vh) / 8.0) / texHeight
 		tx2 := (float32(glyph.X) + vw) / texWidth
 		ty2 := (float32(glyph.Y) + vh) / texHeight
 
